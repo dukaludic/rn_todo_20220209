@@ -1,20 +1,30 @@
 import React, {useContext, useState} from 'react';
-import {SafeAreaView, StyleSheet, Text, TextInput, View} from 'react-native';
+import {
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+  Button,
+} from 'react-native';
 import {GlobalState} from '../context/GlobalState';
 import Navbar from './Navbar';
 import NewTodo from './NewTodo';
 
-function TodoHome() {
+function TodoHome({navigation}) {
   const state = useContext(GlobalState);
 
   console.log(state, '===state');
 
   return (
     <>
-      <Navbar />
       <View style={styles.headerContainer}>
         <Text style={styles.headingTitle}>To Do</Text>
         <NewTodo />
+        <Button
+          title="Go to finished"
+          onPress={() => navigation.navigate('FinishedTodos')}
+        />
       </View>
     </>
   );

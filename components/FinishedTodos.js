@@ -11,7 +11,6 @@ function FinishedTodos() {
 
   return (
     <>
-      <Navbar />
       <Text>FinishedTodos</Text>
       <Button
         onPress={logContext}

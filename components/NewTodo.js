@@ -10,7 +10,7 @@ function NewTodo() {
 
   const addTodo = () => {
     // context.push({id: 3, title: todoInput});
-    context.dispatch({type: 'ADD_TODO'});
+    context.dispatch({type: 'ADD_TODO', payload: {id: 5, title: todoInput}});
   };
 
   return (

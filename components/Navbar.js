@@ -9,12 +9,12 @@ function Navbar() {
 
   return (
     <View style={styles.container}>
-      <Link to={`/`} style={styles.link} underlayColor="#f0f4f7">
+      {/* <Link to={`/`} style={styles.link} underlayColor="#f0f4f7">
         <Text>Todos</Text>
       </Link>
       <Link to={`/finished`} style={styles.link} underlayColor="#f0f4f7">
         <Text>Finished</Text>
-      </Link>
+      </Link> */}
     </View>
   );
 }

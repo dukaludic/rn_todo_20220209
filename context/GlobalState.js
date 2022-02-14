@@ -15,15 +15,14 @@ const GlobalStateProvider = props => {
   const reducer = (currentState, action) => {
     switch (action.type) {
       case 'ADD_TODO':
-        console.log('ADD_TODO');
-        // currentState.todos.push(action.payload);
+        // console.log('ADD_TODO');
+        return currentState.todos.push(action.payload);
         break;
       case 'REMOVE_TODO':
         break;
 
       default:
         return state;
-        break;
     }
   };
 
